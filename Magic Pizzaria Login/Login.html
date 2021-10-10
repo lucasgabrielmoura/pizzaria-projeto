@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGIC PIZZARIA</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="loginResponsivo.css">
+    <script src="./login.js"></script>
+</head>
+
+<body>
+    <div id="box" class="box">
+        <img class="image1" src="magicpizzaria1.png" alt="Magic Pizzaria" width="300" height="270">
+        <img class="image2" src="magicpizzaria1.png" alt="Magic Pizzaria" width="300" height="270">
+        <div class="front">
+
+            <form class="container1"> <br><br><br>
+
+              
+                <input id="Usuario" class="form_field" type="Usuario" placeholder="Usuário" required />
+                <input id="Senha" class="form_field" type="password" placeholder="Senha" required />
+                <br/> <br/>
+                <button type="button" onclick="validUserForm()" class="form_button"><b>ENTRAR</b></button> <br><br>
+                <button onclick="goback()" class="form_button"><b>CADASTRAR</b></button>
+
+                <h1  onclick="esqueceuSenha()"><b>Esqueceu a senha? Clique aqui </b></h1>
+                
+
+                 
+            </form>  
+
+        </div>
+
+
+
+        <div class="back">
+            <form class="container2"><br><br><br>
+                <label for="Usuario" class="form_label"><b>Usuário</b></label>
+                <input id="Usuario" class="form_field1" type="Usuario" placeholder="Usuario" required />
+                <label for="Senha" class="form_label"><b>Senha</b></label>
+                <input id="Senha" class="form_field1" type="password" placeholder="Senha" required />
+                <label for="Confirmar_Senha" class="form_label"><b>Confirmar Senha</b></label>
+                <input id="Confirmar_Senha" class="form_field1" type="password" placeholder="Senha" required />
+                <button onclick="gofront()" class="form_button2"><b>REGISTRA-SE</b></button> <br><br/><br><br/>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="modal">
+        <div class="caixaDeAviso" id="telademodal"><br><br>
+            <p id="mensagem"></p>
+            <button onclick="fechar()" class="form_button3"><b>OK</b></button>
+        </div>
+    </div>
+
+    <div class="modal1">
+        <div class="caixaDeAviso" id="telademodal"><br><br>
+            <p id="mensagemtext"></p><br>
+            <button onclick="fechar()" class="form_button3"><b>OK</b></button>
+        </div>
+    </div>
+</body>
+
+</html>

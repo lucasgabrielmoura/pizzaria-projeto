@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pratos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <title>Pratos Populares</title>
+    </head>
+    <body>
+        <header class="titulo">
+            <h1 class="neonText">PRATOS POPULARES</h1>
+            <p>As pizzas mais pedidas da pizzaria.</p>
+        </header>
+        <a href="#"><img class="logo" src="/pratos-populares/img/Magic_Pizzaria_roxo.png" alt="logo"></a>
+        <div class="main">
+            <div class="caixas pizza1 active">
+                <h3>Frango c/Catupiry</h3>
+                <p>Uma pizza popular entre as familias,
+                    ela consegue tranformar uma noite
+                    mais alegre e melhor para todos, nosso carro-chefe!                   
+                </p>
+            </div>
+            <div class="caixas pizza3">
+                <h3>Pizza de Camarão</h3>
+                <p>É uma pizza um pouco mais cara,
+                    porém, ela consegue trazer sabores 
+                    inimagináveis, possuímos 
+                    um preparo 
+                    único e que agrada todos!
+                    
+                </p>
+            </div>
+            <div class="s-main">
+                <img class="seta" onclick="carroselDown()" src="img/arrow-left.svg" alt="">
+                <div class="carrosel">
+                    <div class="container" id="img">
+                        <img class="populares" src="img/frango-catupiry.jpg" alt="">
+                        <img class="populares"  src="img/calabresa.jpg" alt="">
+                        <img class="populares"  src="img/camarao.jpg" alt="">
+                    </div>
+                </div>
+                <img class="seta" onclick="carroselUp()" src="img/arrow-right.svg" alt="">
+            </div>
+            <div class="caixas pizza2">
+                <h3>Pizza de Calabresa</h3>
+                <p>Nossa pizza de Calabresa é
+                    conhecida pela forma que ela pode ser customizada,
+                    possuímos vários adicionais a sua escolha.
+                </p>
+            </div>
+        </div>
+        <script src="pratos.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --cinza: #303435;
+    --roxo: #8C52FF;
+    --rosa: #da00f7;
+    --creme: #DAD2A5;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #303435;
+    background-image: url(img/magic-pizzas-palavras.png);
+    background-size: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+/*PARTE DO NEON*/
+.neonText {
+    color: #fff; 
+    animation: flicker 1.5s infinite alternate;
+
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--roxo),
+        0 0 80px var(--roxo),
+        0 0 90px var(--roxo),
+        0 0 100px var(--roxo),
+        0 0 150px var(--roxo);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+/*PARTE DO NEON ===*/
+h1{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+p{
+    color: var(--creme);
+    margin: 0;
+}
+div.main{
+    display: flex;
+    justify-content: space-between;
+}
+div.s-main{
+    display: flex;
+}
+header.titulo{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2vw;
+}
+/*668 para  media*/
+/*CAIXAS DOS PRATOS*/
+div.caixas{
+    position: absolute;
+    color: var(--rosa);
+    width: 30%;
+    padding: 10px;
+}
+div.caixas:hover{
+    box-shadow:
+    0 0 .1rem var(--rosa),
+    0 0 .1rem var(--rosa),
+    0 0 1rem var(--rosa),
+    0 0 0.5rem var(--rosa),
+    0 0 2rem var(--rosa),
+    inset 0 0 1rem var(--rosa);
+}
+div.caixas.pizza1{
+    left: 3vw;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: 1s;
+    z-index: 0;
+}
+div.caixas.pizza3{
+    left: 3vw;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: 1s;
+    z-index: 0;
+}
+div.caixas.pizza2{
+    right: 3vw;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: 1s;
+    z-index: 0;
+}
+div.caixas.pizza1.active{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+div.caixas.pizza2.active{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+div.caixas.pizza3.active{
+    visibility: visible;
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+/*CAIXAS DOS PRATOS====*/
+div.carrosel div.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+div.carrosel{
+    box-shadow:
+    0 0 .1rem var(--rosa),
+    0 0 .1rem var(--rosa),
+    0 0 1rem var(--rosa),
+    0 0 0.5rem var(--rosa),
+    0 0 2rem var(--rosa),
+    inset 0 0 1rem var(--rosa); 
+    overflow: hidden;
+    width: 21vw;
+    transition: 1s;
+    z-index: 1;
+}
+
+img.populares{
+    object-fit: cover;
+    width: 21vw;
+}
+img.seta{
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 2vw;
+}
+img.seta:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+div.carrosel:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    z-index: 1;
+}
+img.logo{
+    width: 20vw;
+    position: fixed;
+    right: 5vw;
+    top: 0vh;
+    z-index: 999;
+    transform: scale(0.5);
+    transition: 1s;
+}
+img.logo:hover{
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: 1s;
+}
+/*responsividade após laptop*/
+@media (min-width:1440px) {
+    h3{
+        font-size: 1.6vw;
+    }
+    p{
+        font-size: 1.3vw;
+    }
+}
+/*responsividade para mobile*/
+@media (max-width: 640px) {
+    h1{
+        font-size: 20px;
+    }
+    header p{
+        font-size: 10px;
+    }
+    body{
+       justify-content: unset;
+    }
+    header.titulo{
+        height: 15vh;
+    }
+    div.caixas.pizza1{
+        left: 25vw;
+        top: 50vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas.pizza3{
+        left: 25vw;
+        top: 50vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas.pizza2{
+        left: 25vw;
+        top: 50vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas{
+        position: absolute;
+        color: var(--rosa);
+        width: 50%;
+        text-align: center;
+    }
+    div.carrosel:hover{
+        transform: scale(1.3);
+        transition: 1s;
+        z-index: 1;
+    }
+    
+}
+@media (max-width: 500px) {
+    h1{
+        font-size: 20px;
+    }
+    header p{
+        font-size: 10px;
+    }
+    body{
+       justify-content: unset;
+    }
+    header.titulo{
+        height: 20vh;
+    }
+    div.caixas.pizza1{
+        left: 25vw;
+        top: 40vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas.pizza3{
+        left: 25vw;
+        top: 40vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas.pizza2{
+        left: 25vw;
+        top: 40vh;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: 1s;
+    }
+    div.caixas{
+        position: absolute;
+        color: var(--rosa);
+        width: 50%;
+        text-align: center;
+    }
+    div.carrosel:hover{
+        transform: scale(2);
+        transition: 1s;
+        z-index: 1;
+    }
+    
+}

@@ -1,0 +1,218 @@
+/*CONFIGS GERAIS*/
+:root{
+    --cinza: #303435;
+    --roxo: #8C52FF;
+    --rosa: #da00f7;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cinza);
+}
+p{
+    color: #DAD2A5;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.flex{
+    display: flex;
+}
+/*CONFIGS GERAIS ===*/
+/*CARDÁPIO*/
+div.cardapio{
+    width: 70%;
+    background-color: #303435;
+    height: 100vh;
+    background-image: url(img/magic-pizzas-palavras.png);
+    background-size: 200px;
+}
+/*PARTE DO NEON*/
+.neonText {
+    color: #fff; 
+    animation: flicker 1.5s infinite alternate;
+
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--roxo),
+        0 0 80px var(--roxo),
+        0 0 90px var(--roxo),
+        0 0 100px var(--roxo),
+        0 0 150px var(--roxo);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+/*PARTE DO NEON ===*/
+article.titulo{
+   color:#ffffff; 
+}
+.margin-size{
+    margin: 0;
+    font-size: 8vw;
+}
+article.tituloS{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+}
+h2.position{
+    display: flex;
+    justify-content: right;
+}
+div.itens{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: space-around;
+    overflow: auto;
+}
+img.imagem.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    border-radius: 5%;
+    transform: scale(1);
+}
+img.imagem{
+    width: 10vw;
+    position: fixed;
+    margin-bottom: 20vw;
+    box-shadow:
+    0 0 .1rem var(--rosa),
+    0 0 .1rem var(--rosa),
+    0 0 1rem var(--rosa),
+    0 0 0.5rem var(--rosa),
+    0 0 2rem var(--rosa),
+    inset 0 0 1rem var(--rosa); 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    transform: scale(0);  
+    z-index: 1000;
+}
+article.caixas{
+    width: 30%;
+}
+article.caixas.caixa1{
+    height: 60%;
+}
+article.caixas.caixa2{
+    height: 30%;
+    overflow-y: auto;
+}
+div.tabelas{
+    display: flex;
+    justify-content: space-between;
+}
+span.description{
+    font-size: 1vw;
+}
+h3.categoria{
+    color: var(--rosa);
+    font-size: 1.6vw;
+}
+p{
+    font-size: 1.17vw;
+}
+img.logo{
+    width: 20vw;
+    position: fixed;
+    right: 30vw;
+    bottom: -13vh;
+    z-index: 999;
+    transform: scale(0.5);
+    transition: 1s;
+}
+img.logo:hover{
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: 1s;
+}
+/*CARDÁPIO*/
+/*IMAGEM AO LADO*/
+div.pizza-foto{
+    width: 30vw;
+    height: 100vh;
+    background-image: url(img/shaian-ramesht-exSEmuA7R7k-unsplash.jpg);
+    background-position: center;
+    background-size: 130vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: lighten;
+}
+/*IMAGEM AO LADO ===*/
+@media (max-width: 768px) {
+    p{
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+    span.description{
+        font-size: 10px;
+    }
+    h3.categoria{
+        color: var(--rosa);
+        font-size: 20px;
+        margin-bottom: 0.5em;
+    }
+    div.itens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        justify-content: space-around;
+    }
+    article.caixas{
+        width: 80%;
+    }
+    img.imagem{
+        width: 70px;
+        position: absolute;
+        border: 1px solid var(--rosa);
+        box-shadow:
+        0 0 .1rem var(--rosa),
+        0 0 .1rem var(--rosa),
+        0 0 1rem var(--rosa),
+        0 0 0.5rem var(--rosa),
+        0 0 2rem var(--rosa),
+        inset 0 0 1rem var(--rosa); 
+        visibility: hidden;
+        opacity: 0.8;
+        transition: 0.2s;
+        transform: scale(0);  
+    }
+    img.logo{
+        width: 40px;
+        position: fixed;
+        right: 5vw;
+        top: 2vh;
+        z-index: 999;
+        transform: scale(1);
+    }
+    img.logo:hover{
+        cursor: pointer;
+        transform: scale(2);
+        transition: 1s;
+    }
+    div.cardapio{
+        height: auto;
+        width: 100%;
+    }
+    div.pizza-foto{
+        height: 10vh;
+        visibility: hidden;
+        position: absolute;
+    }
+}

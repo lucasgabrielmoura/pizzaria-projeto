@@ -1,5 +1,5 @@
    
-    var x = document.getElementById("enviar").getAttributeNode("data-bs-target");
+    var x = document.getElementById("enviar");
     function modal() {
     let nome = document.getElementById("txtn").value;
     let email = document.getElementById("txte").value;

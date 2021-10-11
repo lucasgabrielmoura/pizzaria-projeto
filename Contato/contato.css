@@ -141,7 +141,7 @@ label {
     align-items: center;
 }
 .textoModal {
-    padding: 15px;
+    padding: 40px;
 }
 @media (max-width: 929px) {
    #formulario {

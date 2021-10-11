@@ -133,6 +133,7 @@ h1{
     color: white;
     top: 50px;
     align-items: center;
+    margin: 5%;
 }
 
 
@@ -232,5 +233,6 @@ img {
 #mensagem, #mensagemtext {
     color:black;
     font-weight: bold;
+    margin: 10%;
 }
 

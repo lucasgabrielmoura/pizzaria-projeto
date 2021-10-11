@@ -19,6 +19,7 @@ function validUserForm(){
    
     if(login  && senha){
         document.getElementById('mensagem').innerHTML = "BEM VINDO AO MAGIC PIZZARIA";
+        document.getElementById('botao').setAttribute('href', '/tela-de-cardapio/cardapio.html')
     }
     else {
         document.getElementById('mensagem').innerHTML = "Por favor verifique se todos os dados foram preenchidos";

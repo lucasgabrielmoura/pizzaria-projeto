@@ -20,4 +20,5 @@ function validador() {
 function apagar(){
     document.querySelector(".modal").classList.toggle("active");
     document.getElementById("mensagemtext").innerHTML = "Sua reserva foi cancelada!"
+    document.getElementById("home").setAttribute("href","/Home/index.html")
 }

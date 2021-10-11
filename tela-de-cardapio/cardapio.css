@@ -13,6 +13,7 @@ p{
     color: #DAD2A5;
     margin: 0;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 .flex{
     display: flex;

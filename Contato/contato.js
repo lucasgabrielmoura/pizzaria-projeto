@@ -21,6 +21,7 @@
         let modal = document.querySelector(".modal");
         modal.classList.toggle("active");
         testando.innerText = "Sua mensagem foi enviada a Magic Pizzaria!";
+        document.getElementById("botao").setAttribute("href","/Home/index.html");
         } else {
             let testando = document.getElementById("msg");
             let modal = document.querySelector(".modal");

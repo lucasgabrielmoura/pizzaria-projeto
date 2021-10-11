@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="https://kit.fontawesome.com/b2831a100f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Magic Pizzaria</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="msg"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="painel">
+        <img src="Magic_Pizzaria_4.png" id="logo" alt="Logo magic pizzaria">
+        <form id="formulario">
+            <h3>ENTRE EM CONTATO</h3>
+            <label for="Nome">Nome </label>
+            <input type="text" id="txtn" name="nome" autocomplete="off" placeholder="Nome">
+            <label for="email">Email </label>
+            <input type="text" id="txte" name="email" autocomplete="off" placeholder="Email">
+            <label for="telefone">Telefone </label>
+            <input type="text" id="numbert" placeholder="xxxxx-xxxx"/> 
+            <label for="assunto">Assunto </label>
+            <select name="assunto">
+                <option>Outros</option>
+                <option>Reclamações</option>
+                <option>Sugestões</option>
+                <option>Duvidas</option>
+            </select>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="60" rows="5"></textarea>
+              <input type="reset" onclick="modal()"  value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        </form>
+    </div>
+    <div id="linha"></div>
+    <footer id="rodape">
+        <h3>Av. Espacial N°9 | Jupter | 55+ (81)99999-9999</h3>
+    </footer>
+    <script src="/bootstrap.min.js"></script>
+    <script src="contato.js"></script>
+</body>
+</html>

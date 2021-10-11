@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url("pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#painel {
+    display: flex;
+    justify-content: end;
+}
+#logo {
+    position: absolute;
+    width: 40vw;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+#formulario h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #2f89ff;
+}
+#formulario {
+    background-color: #303435c2;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    min-width: 30vw;
+    padding: 20px;
+    left: 80%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+}
+#formulario input, select{
+    width: 26vw;
+    height: 3vh;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    border-bottom: solid 1px white;
+    background: none;
+    outline: none;
+    color: white;
+}
+option {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+label {
+    color: #2f89ff;
+}
+#formulario textarea {
+    width: 26vw;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    background: none;
+    outline: none;
+    color: white;
+}
+#formulario input[type=reset] {
+    width: 27vw;
+    height: 7vh;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#2f89ffd0, #8c52ffb0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+#formulario input[type=reset]:hover {
+    background-image: linear-gradient(to right,#1478fa, #742eff86);
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+    font-size: 25px;
+}
+#linha {
+    background-color: black;
+    height: 3px;
+    width: 100vw;
+    position: absolute;
+    top: 92vh;
+    z-index: 1;
+}
+#rodape {
+    position: absolute;
+    top: 92%;
+    right: 0;
+    transform: translate(-50% -50%);
+    width: 100vw;
+    height: 8vh;
+    padding: 17px;
+    text-align: center;
+    background-color:#e0e0e07a;
+}
+#rodape h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 929px) {
+   #formulario {
+       display: flex;
+       top: 47%;
+       left: 50%;
+       width: 100%;
+       max-width: 80vw;
+       max-height: 90vh;
+       flex-direction: column;
+   }
+   body {
+       background-image: url("pizza2.jpg");
+       background-size: 128.8%;
+   }
+   #logo {
+        top: 50%;
+        left: 50%;
+        max-width: 90vw;
+        height: 45vh;
+        opacity: 0.8;
+   }
+   #formulario input, select {
+        width: 100%;
+        max-width: 80vw;
+        max-height: 80vh;
+   }
+   #formulario textarea {
+        width: 100%;
+        max-width: 80vw;
+        max-height: 80vh;
+   }
+   #formulario input[type=reset] {
+        width: 100%;
+        max-width: 80vw;
+        max-height: 80vh;
+   }
+}
+@media (max-width: 400px) {
+    #rodape h3{
+        padding: 5px;
+        font-size: 14px;
+    }
+}

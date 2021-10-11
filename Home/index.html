@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão para abrir e fechar o menu -->
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img id="botao" src="menu.png" alt="botão/menu">
+    </label>
+    <!-- Menu -->
+    <nav id="menu">
+        <img src="Magic_Pizzaria_4.png" id="logo" alt="Logo magic">
+        <ul>
+            <li><a target="_blank" href="#">CARDÁPIO</a></li>
+            <li><a target="_blank" href="#">PRATOS POPULARES</a></li>
+            <li><a target="_blank" href="3">RESERVAS</a></li>
+            <li><a target="_blank" href="4">LOGIN</a></li>
+            <li><a target="_blank" href="">CONTATO</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modal()" id="newUni" href="">NOVA UNIDADE</a></li>    
+        </ul>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Magic Pizzaria</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p id="msg">...</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok!</button>
+            </div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+    <script src="/bootstrap.min.js"></script>
+</body>
+</html>

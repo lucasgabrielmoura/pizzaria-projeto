@@ -5,40 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script dos ícones -->
+    <script src="https://kit.fontawesome.com/b2831a100f.js" crossorigin="anonymous"></script>
     <!-- Linkagem do CSS -->
     <link rel="stylesheet" href="reserva.css">
     <!-- Script do JavaScript -->
     <script src="reserva.js" defer></script>
-    <!-- Script do Bootstrap CSS para o botão e alert -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <!-- Script do Bootstrap JS para o botão e alert -->
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <!-- Script dos ícones -->
-    <script src="https://kit.fontawesome.com/b2831a100f.js" crossorigin="anonymous"></script>
     <title>Reserva</title>
 </head>
 
 <body>
-    <!-- Modal para melhorar o designer do alert -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Magic Pizzaria</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p id="modal"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Modal -->
-
     <div class="hero">
         <form>
             <!-- Titulo do Formulário -->
@@ -64,34 +40,38 @@
 
             <!--Div Preenchimento Data e Hora -->
             <h4>Data e Hora</h4>
-                <div class="input-group">
-                    <input type="datetime-local" id="dataHora" autocomplete="off" required itemid="dataHora">
-                </div>
+            <div class="input-group">
+                <input type="datetime-local" id="dataHora" autocomplete="off" required itemid="dataHora">
+            </div>
 
             <!-- Div Quantidade de Pessoas para o restaurante -->
-                <div class="input-group" required>
-                    <h4>Reservar para: <select id="opcoes">
-                            <option value="valor1">1 Pessoa</option>
-                            <option value="valor2">2 Pessoas</option>
-                            <option value="valor3">3 Pessoas</option>
-                            <option value="valor4">4 Pessoas</option>
-                            <option value="valor5">5 Pessoas</option>
-                            <option value="valor6">6 Pessoas</option>
-                            <option value="valor7">7 Pessoas</option>
-                            <option value="valor8">8 Pessoas</option>
-                            <option value="valor9">9 Pessoas</option>
-                            <option value="valor10">10 Pessoas</option>
-                        </select></h4>
-                </div>
+            <div class="input-group" required>
+                <h4>Reservar para: <select id="opcoes">
+                        <option value="valor1">1 Pessoa</option>
+                        <option value="valor2">2 Pessoas</option>
+                        <option value="valor3">3 Pessoas</option>
+                        <option value="valor4">4 Pessoas</option>
+                        <option value="valor5">5 Pessoas</option>
+                        <option value="valor6">6 Pessoas</option>
+                        <option value="valor7">7 Pessoas</option>
+                        <option value="valor8">8 Pessoas</option>
+                        <option value="valor9">9 Pessoas</option>
+                        <option value="valor10">10 Pessoas</option>
+                    </select></h4>
+            </div>
 
-                <!-- Div Botão ENVIAR e CANCELAR -->
-                <button type="button" onclick="validador()" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" class="personalizado">Enviar</button> <button type="reset"
-                            onclick="apagar()" data-bs-toggle="modal" data-bs-target="#exampleModal" class="personalizado">Cancelar</button>
+            <!-- Div Botão ENVIAR e CANCELAR -->
+            <button type="button" onclick="validador()" class="personalizado">Enviar</button>
+            <button type="reset" onclick="apagar()" class="personalizado">Cancelar</button>
 
-                            <!--Divs e Labels com classes para melhor estilização - inputs com seus respectivos ID para facilitar o manuseio no CSS e JavaScript, botões com bootstrap para melhorar o designer  -->
+            <!--Divs e Labels com classes para melhor estilização - inputs com seus respectivos ID para facilitar o manuseio no CSS e JavaScript -->
         </form>
     </div>
+    <div class="modal">
+        <div class="caixaDeAviso" id="telademodal"><br><br>
+            <p id="mensagemtext"></p>
+            <button  onclick="fechar()" class="botao"><b>OK</b></button>
+        </div>
 </body>
 
 </html>

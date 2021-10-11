@@ -73,6 +73,39 @@ label:hover img {
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
+.modal{
+    background: #ffff;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    text-align: center;
+    border: 10px solid rgb(125, 69, 238);
+    box-shadow: 0 0 0 10px #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate;
+    animation-duration: 800ms;
+    display: none;
+    
+}
+
+.modal.active{
+  display: block;
+}
+
+.form_button {
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+    outline: none;
+    background-color: mediumpurple;
+    color: white;
+    top: 50px;
+    align-items: center;
+}
+
 @media (max-width: 1030px) {
     body {
         background-position: 50% 5%;

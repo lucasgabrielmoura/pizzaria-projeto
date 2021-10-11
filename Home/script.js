@@ -1,8 +1,3 @@
- f/* unction modal(){
-    let x = "";
-    x = document.getElementById("newUni").getAttribute("href");
-    if(x == "#"){
-        let testando = document.getElementById("msg")
-        testa
-    }
-}  */
+function modal() {
+    document.querySelector(".modal").classList.toggle("active")
+}

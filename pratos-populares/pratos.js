@@ -39,3 +39,4 @@ function carroselDown(){
 }
 
 setInterval(carroselUp,5000)
+

@@ -143,6 +143,28 @@ label {
 .textoModal {
     padding: 40px;
 }
+#voltaHome {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3.5vw;
+    width: 20vw;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#2f89ffd0, #8c52ffb0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+#voltaHome:hover {
+    background-image: linear-gradient(to right,#1478fa, #742eff86);
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+    font-size: 20px;
+}
 @media (max-width: 929px) {
    #formulario {
        display: flex;
@@ -178,6 +200,12 @@ label {
         width: 100%;
         max-width: 80vw;
         max-height: 80vh;
+   }
+   #voltaHome {
+    width: 70%;
+    max-width: 70vw;
+    max-height: 80vh;
+    margin-left: 11.5vw;
    }
 }
 @media (max-width: 400px) {

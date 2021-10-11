@@ -153,8 +153,7 @@ img.populares{
     width: 21vw;
 }
 img.seta{
-    opacity: 0;
-    transition: 0.3s;
+    opacity: 0.5;
     cursor: pointer;
     width: 2vw;
 }

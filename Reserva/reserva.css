@@ -119,3 +119,7 @@ select, option{
     border-radius: 15px;
     width: 30vh;
 }
+
+#mensagemtext{
+    padding: 35px;
+}

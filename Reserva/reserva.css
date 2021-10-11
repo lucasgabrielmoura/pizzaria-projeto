@@ -79,7 +79,7 @@ select, option{
     position: relative;
 }
 
-.caixaDeAviso {
+.modal{
     background: #ffff;
     width: 400px;
     height: 200px;
@@ -91,11 +91,11 @@ select, option{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);  
-    display: block;
+    display: none;
 }
 
-.caixaDeAviso.active {
-    display: none;
+.modal.active{
+    display: block;
 }
 
 .botao{
@@ -118,4 +118,8 @@ select, option{
     color: #000;
     border-radius: 15px;
     width: 30vh;
+}
+
+#mensagemtext{
+    padding: 35px;
 }

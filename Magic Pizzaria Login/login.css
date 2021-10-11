@@ -133,6 +133,7 @@ h1{
     color: white;
     top: 50px;
     align-items: center;
+    margin: 5%;
 }
 
 
@@ -164,7 +165,7 @@ h1{
 }
 
 .container1{
-    margin-top: -400px;
+    margin-top: -350px;
 }
 
 .image2 {
@@ -232,5 +233,6 @@ img {
 #mensagem, #mensagemtext {
     color:black;
     font-weight: bold;
+    margin: 10%;
 }
 

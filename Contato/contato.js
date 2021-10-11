@@ -13,14 +13,27 @@
 
     if(nome == "" || email == "" || telefone == "" || mensagem == "") {
         let testando = document.getElementById("msg")
+        let modal = document.querySelector(".modal");
+        modal.style.display = 'block';
             testando.innerText = "Por favor verifique se todos os dados foram preechidos.";
     } else if(testRegex() === true) {
         let testando = document.getElementById("msg")
+        let modal = document.querySelector(".modal");
+        modal.style.display = 'block';
         testando.innerText = "Sua mensagem foi enviada a Magic Pizzaria!"
         } else {
-            let testando = document.getElementById("msg")
+            let testando = document.getElementById("msg");
+            let modal = document.querySelector(".modal");
+            modal.style.display = 'block';
             testando.innerText = "Email inválido";
         }
+    }
+
+    function fechar(){
+        let modal = document.querySelector('.modal');
+        let modal1 = document.querySelector('.modal1');
+        modal.style.display='none';
+        modal1.style.display='none';
     }
 
 

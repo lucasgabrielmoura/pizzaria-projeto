@@ -1,11 +1,21 @@
-function modal(){
+/* function modal(){
     var x = "";
     x = document.getElementById("newUni").href;
     console.log(x)
-    if(x.endsWith("")){
+    if(x.endsWith("#")){
         let pagina = document.getElementById("msg")
+        let modal = document.querySelector(".modal");
+        modal.StyleSheet.display = 'block';
         pagina.innerText = "Está pagina ainda não foi criada.";
-    } else {
-        window.location.href = "http://127.0.0.1:5500/index.html"
+    } 
+} */
+
+
+function modal() {
+    test = document.getElementById("testando").getAttribute("href");
+    let modal = document.querySelector(".modal");
+        
+    if(test == "#") {
+        modal.classList.toggle('active');
     }
 }

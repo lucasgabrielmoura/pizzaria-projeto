@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 body {
     background-image: url("pizza.jpg");
@@ -123,8 +124,6 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: animate;
-    animation-duration: 800ms;
     display: none;
     z-index: 1;
 }
@@ -141,7 +140,9 @@ label {
     top: 50px;
     align-items: center;
 }
-
+.textoModal {
+    padding: 15px;
+}
 @media (max-width: 929px) {
    #formulario {
        display: flex;
@@ -184,4 +185,8 @@ label {
         padding: 5px;
         font-size: 14px;
     }
+    body {
+        background-image: url("pizza2.jpg");
+        background-size: 153%;
+    } 
 }

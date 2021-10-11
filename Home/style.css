@@ -105,7 +105,9 @@ label:hover img {
     top: 50px;
     align-items: center;
 }
-
+.textoModal {
+    padding: 40px;
+}
 @media (max-width: 1030px) {
     body {
         background-position: 50% 5%;

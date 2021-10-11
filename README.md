@@ -37,7 +37,9 @@ Fazer uma conexão entre clientes e pizzaria por meio de um Website.
       height="120"
     />
 </p>
+
 ## :mortar_board: Autores
+
 <p align="center">
     <img
       src="https://avatars.githubusercontent.com/u/87838554?v=4"

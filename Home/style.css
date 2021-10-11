@@ -46,7 +46,7 @@ ul {
 }
 a {
     display: block;
-    padding: 8% 1%;
+    padding: 7% 10%;
     color: #5ea2fc;
     text-decoration: none;
 }
@@ -105,7 +105,9 @@ label:hover img {
     top: 50px;
     align-items: center;
 }
-
+.textoModal {
+    padding: 40px;
+}
 @media (max-width: 1030px) {
     body {
         background-position: 50% 5%;

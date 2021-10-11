@@ -1,5 +1,4 @@
 <img align="center" src="/pratos-populares/img/Magic_Pizzaria_roxo.png" alt="Logo da Pizzaria Magic" width="400">
-<h1>Magic Pizzaria 🍕</h1><br>
 <h2>
     💻 Sobre o projeto
 </h2>

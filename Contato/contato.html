@@ -12,7 +12,7 @@
   <div class="modal">
     <div class="caixaDeAviso" id="telademodal"><br><br>
         <p id="msg"></p>
-        <a href="#" id="botao"><button onclick="fechar()" class="form_button"><b>OK</b></button></a>
+        <a href="#" id="botao"><button onclick="modal()" class="form_button"><b>OK</b></button></a>
     </div>
 </div>
     <div id="painel">
@@ -24,7 +24,7 @@
             <label for="email">Email </label>
             <input type="text" id="txte" name="email" autocomplete="off" placeholder="Email">
             <label for="telefone">Telefone </label>
-            <input type="text" id="numbert" placeholder="xxxxx-xxxx"/> 
+            <input type="number" id="numbert" placeholder="xxxxx-xxxx"/> 
             <label for="assunto">Assunto </label>
             <select name="assunto">
                 <option>Outros</option>
@@ -34,7 +34,7 @@
             </select>
             <label for="mensagem">Mensagem</label><br>
             <textarea name="mensagem" id="mensagem" cols="60" rows="5"></textarea>
-              <input type="reset" onclick="modal()"  value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <input type="reset" onclick="modal()" value="ENVIAR">
         </form>
     </div>
     <div id="linha"></div>

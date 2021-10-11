@@ -87,13 +87,12 @@ label:hover img {
     transform: translate(-50%, -50%);
     animation: animate;
     animation-duration: 800ms;
-    opacity: 0;
+    display: none;
     
 }
 
 .modal.active{
-  
-  opacity: 1;
+  display: block;
 }
 
 .form_button {

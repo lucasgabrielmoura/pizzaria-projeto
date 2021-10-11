@@ -128,6 +128,9 @@ label {
     display: none;
     z-index: 1;
 }
+.modal.active {
+    display: block;
+}
 .form_button {
     border-radius: 5px;
     width: 30%;
